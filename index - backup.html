@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<link rel="shortcut icon" href="img/favicon.ico" />
+    <title>TEDxSPIT</title>
+
+    <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	
+	<!--Added fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	
+	<!--<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">-->
+
+  </head>
+  
+  <script>
+		// Set the date we're counting down to
+		var countDownDate = new Date("Feb 8, 2018 12:00:00").getTime();
+
+		// Update the count down every 1 second
+		var x = setInterval(function() {
+
+		  // Get todays date and time
+		  var now = new Date().getTime();
+
+		  // Find the distance between now an the count down date
+		  var distance = countDownDate - now;
+
+		  // Time calculations for days, hours, minutes and seconds
+		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+		  // Display the result in the element with id="demo"
+		  document.getElementById("counter").innerHTML = days + "d " + hours + "h "
+		  + minutes + "m " + seconds + "s ";
+		  
+		  //document.getElementById("tiles").innerHTML = "<span>" + days + "</span><span>" + hours + "</span><span>" + minutes + "</span><span>" + seconds + "</span>";
+		  
+		  document.getElementById("mu-event-counter").innerHTML = '<span class="mu-event-counter-block"><span id="days">' + days + '</span> DAYS</span> <span class="mu-event-counter-block"><span id="hours">' + hours + '</span> HOURS</span> <span class="mu-event-counter-block"><span id="mins">'+ minutes + '</span> MINS</span> <span class="mu-event-counter-block"><span id="secs">' + seconds + '</span> SECS</span>';
+		  
+		  // If the count down is finished, write some text 
+		  if (distance < 0) {
+			clearInterval(x);
+			document.getElementById("counter").innerHTML = "EVENT OVER";
+			document.getElementById("counter-main").innerHTML = "EVENT OVER";
+		  }
+		}, 1000);
+		
+		/*var target_date = new Date().getTime() + (1000*3600*48); // set the countdown date
+		var days, hours, minutes, seconds; // variables for time units
+
+		var countdown = document.getElementById("tiles"); // get tag element
+
+		getCountdown();
+
+		setInterval(function () { getCountdown(); }, 1000);
+
+		function getCountdown(){
+
+			// find the amount of "seconds" between now and target
+			var current_date = new Date().getTime();
+			var seconds_left = (target_date - current_date) / 1000;
+
+			days = pad( parseInt(seconds_left / 86400) );
+			seconds_left = seconds_left % 86400;
+				 
+			hours = pad( parseInt(seconds_left / 3600) );
+			seconds_left = seconds_left % 3600;
+				  
+			minutes = pad( parseInt(seconds_left / 60) );
+			seconds = pad( parseInt( seconds_left % 60 ) );
+
+			// format countdown string + set tag value
+			document.getElementById("tiles").innerHTML = "<span>" + days + "</span><span>" + hours + "</span><span>" + minutes + "</span><span>" + seconds + "</span>"; 
+		}
+
+		function pad(n) {
+			return (n < 10 ? '0' : '') + n;
+		}
+		
+		<div id="mu-event-counter">
+			<span class="mu-event-counter-block">
+				<span>776</span> Days</span> 
+			<span class="mu-event-counter-block"><span>02</span> Hours</span> 
+			<span class="mu-event-counter-block"><span>09</span> Mins</span> 
+			<span class="mu-event-counter-block"><span>41</span> Secs</span>
+		</div>
+		
+		*/
+		
+</script>
+
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+
+<script type="text/javascript">
+(function($) {          
+    $(document).ready(function(){ 
+		$('#mainNav').hide();
+        $(window).scroll(function(){                          
+            if ($(this).scrollTop() > 200) {
+                $('#mainNav').fadeIn(500);
+            } else {
+                $('#mainNav').fadeOut(500);
+            }
+        });
+    });
+})(jQuery);
+
+$(document).ready(function() {
+  //Set the carousel options
+  $('#quote-carousel').carousel({
+    pause: true,
+    interval: 4000,
+  });
+});
+
+</script>
+
+<style>
+
+	#preload {
+	  position: absolute;
+	  left: 47%;
+	  width: 60px;
+	  height: 60px;
+	  margin: 20px 0 0 0;
+	  background: #C60B09;
+	  transform: rotate(45deg);
+	  animation: spin 1s infinite linear;
+	  z-index: 100;
+	}
+	@keyframes spin {
+		0% { -webkit-transform:rotate(0deg); }
+		100% { -webkit-transform:rotate(360deg); }
+	}
+
+	#status  {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: #fefefe;
+     z-index: 99;
+    height: 100%;
+ }
+
+	body
+	{
+		font-family: 'Raleway', sans-serif;
+	}
+	
+	.product .img-responsive {
+		margin: 0 auto;
+	}
+
+	/* carousel */
+	#quote-carousel 
+	{
+	  padding: 0 10px 30px 10px;
+	  margin-top: 30px;
+	}
+
+	/* Control buttons  */
+	#quote-carousel .carousel-control
+	{
+	  background: none;
+	  color: #222;
+	  font-size: 2.3em;
+	  text-shadow: none;
+	  margin-top: 30px;
+	}
+	/* Previous button  */
+	#quote-carousel .carousel-control.left 
+	{
+	  left: -12px;
+	}
+	/* Next button  */
+	#quote-carousel .carousel-control.right 
+	{
+	  right: -12px !important;
+	}
+	/* Changes the position of the indicators */
+	#quote-carousel .carousel-indicators 
+	{
+	  right: 50%;
+	  top: auto;
+	  bottom: 0px;
+	  margin-right: -19px;
+	}
+	/* Changes the color of the indicators */
+	#quote-carousel .carousel-indicators li 
+	{
+	  background: #c0c0c0;
+	}
+	#quote-carousel .carousel-indicators .active 
+	{
+	  background: #333333;
+	}
+	#quote-carousel img
+	{
+	  width: 250px;
+	  height: 100px
+	}
+	/* End carousel */
+
+	.item blockquote {
+		border-left: none; 
+		margin: 0;
+	}
+
+	.item blockquote img {
+		margin-bottom: 10px;
+	}
+
+	.item blockquote p:before {
+		content: "\f10d";
+		font-family: 'Fontawesome';
+		float: left;
+		margin-right: 10px;
+	}
+
+
+
+	/**
+	  MEDIA QUERIES
+	*/
+
+	/* Small devices (tablets, 768px and up) */
+	@media (min-width: 768px) { 
+		#quote-carousel 
+		{
+		  margin-bottom: 0;
+		  padding: 0 40px 30px 40px;
+		}
+		
+	}
+
+	/* Small devices (tablets, up to 768px) */
+	@media (max-width: 768px) { 
+		
+		/* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+		
+		#quote-carousel .carousel-indicators {
+			bottom: -20px !important;  
+		}
+		#quote-carousel .carousel-indicators li {
+			display: inline-block;
+			margin: 0px 5px;
+			width: 15px;
+			height: 15px;
+		}
+		#quote-carousel .carousel-indicators li.active {
+			margin: 0px 5px;
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+	.mu-event-counter-area {
+	display: inline;
+	float: left;
+	margin-top: 0px;
+	width: 100%;
+	}
+
+	#mu-event-counter{
+		display: inline;
+		float: left;
+		width: 100%;
+		text-align: center;
+		box-sizing: border-box;
+	}
+
+	.mu-event-counter-block {
+		border: 2px solid #fff;
+		border-radius: 50%;
+		display: inline-block;
+		height: 150px;
+		width: 150px;
+		min-height: 60px;
+		min-width: 60px;
+		text-align: center;
+		font-size: 20px;
+		color: #fff;
+		margin: 0 20px;
+		font-weight: 300;
+	}
+
+	.mu-event-counter-block span {
+		display: block;
+		font-size: 30px;
+		font-weight: 700;
+		padding-top: 38px;
+		line-height: 28px;
+	}
+
+	.circle {
+	  position: relative;
+	  display: block;
+	  margin: 2em 0;
+	  background-color: transparent;
+	  color: #222;
+	  text-align: center;
+	}
+
+	.circle:after {
+	  display: block;
+	  padding-bottom: 100%;
+	  width: 100%;
+	  height: 0;
+	  border-radius: 50%;
+	  background-color: #ddd;
+	  content: "";
+	}
+
+	.circle__inner {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	}
+
+	.circle__wrapper {
+	  display: table;
+	  width: 100%;
+	  height: 100%;
+	}
+
+	.circle__content {
+	  display: table-cell;
+	  padding: 1em;
+	  vertical-align: middle;
+	}
+
+	@media (min-width: 480px) {
+	  .circle__content {
+		font-size: 2em;
+	  }
+	}
+
+	@media (min-width: 768px) {
+	  .circle__content {
+		font-size: 4em;
+	  }
+	}
+</style>
+
+  <body onload="hide()" id="page-top" style="font-size : 175%">
+
+	<div id="status" style="background-color: #000000;">
+		<img align="center" src="img/xw.png" class="center-block img-responsive" alt="TEDxSPIT" style = "padding-top:20%;">
+	  <div id="preload"></div>
+	</div>
+
+	<script>
+		// makes sure the whole site is loaded
+	jQuery(window).load(function() {
+			// will first fade out the loading animation
+		jQuery("#preload").fadeOut();
+			// will fade out the whole DIV that covers the website.
+		jQuery("#status").delay(1000).fadeOut(1800);
+	})
+	</script>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top" style="padding-top: 1rem; font-size: 2rem;"><img src="img/tedxspit.png" class="img-responsive" alt="Cinque Terre" style = "max-width: 147px; height: auto;"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">TEDxSPIT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white d-flex" style="
+    padding-top: 0px;
+    padding-bottom: 0px;
+	">
+      <div class="container mx-auto my-auto" style="
+    padding-top: 0px;
+	">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 align="center">
+              <strong></strong>
+			  <!--<strong id="counter-main"></strong>-->
+            </h1>
+			
+			<div class="container">
+			  <div class='row'>
+				<div class='col-md-offset-0 col-md-12'>
+				  <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+					<!-- Bottom Carousel Indicators -->
+					
+					<!-- Carousel Slides / Quotes -->
+					<div class="carousel-inner" style="font-family: 'Julius Sans One', sans-serif; font-size: 200%;">
+					
+					  <!-- Quote 1 -->
+					  <div class="item active">
+						<blockquote>
+						  <div class="row">
+							<div class="col-sm-12">
+							  <p style="font-size: 160%;">We are all in the gutter, but some of us are looking at the stars.</p>
+							  <small style="color: #FFFFFF">Oscar Wilde</small>
+							</div>
+						  </div>
+						</blockquote>
+					  </div>
+					  <!-- Quote 2 -->
+					  <div class="item">
+						<blockquote>
+						  <div class="row">
+							<div class="col-sm-12">
+							  <p style="font-size: 160%;">How do you know what you're going to do till you do it?</p>
+							  <small style="color: #FFFFFF">Holden Caulfield</small>
+							</div>
+						  </div>
+						</blockquote>
+					  </div>
+					  <!-- Quote 3 -->
+					  <div class="item">
+						<blockquote>
+						  <div class="row">
+							<div class="col-sm-12">
+							  <p style="font-size: 160%;">I can see the beauty of glass objects fully at the moment when they slip from my hand.</p>
+							  <small style="color: #FFFFFF">Andrew Solomon</small>
+							</div>
+						  </div>
+						</blockquote>
+					  </div>
+					</div>
+					
+					<!-- Carousel Buttons Next/Prev -->
+					<a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+					<a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+				  </div>                          
+				</div>
+			  </div>
+			</div>
+			
+			<div class="mu-event-counter-area">
+			<div id="mu-event-counter" style="font-family: 'Audiowide', cursive;">
+				<!--<span class="mu-event-counter-block"><span id="days">776</span> Days</span> 
+				<span class="mu-event-counter-block"><span id="hours">02</span> Hours</span> 
+				<span class="mu-event-counter-block"><span id="mins">09</span> Mins</span> 
+				<span class="mu-event-counter-block"><span id="secs">41</span> Secs</span>-->
+			</div>
+			</div>
+          </div>
+          <div class="col-lg-8 mx-auto">
+		  <br><br><br>
+            <p class="text-faded mb-5">Learning is an attribute that human beings take pride in. In fact, the idea of grasping knowledge has made it a mandatory survival skill which has sprouted to seeds of development in the era. Here at TEDx we facilitate the propagation of pure, unadulterated and intriguing information that several people can retain, enjoy and most importantly apply in real life.</p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about" style="font-size: 1.4rem;">Find Out More</a>
+          </div>
+      </div>
+	  </div>	
+    </header>
+
+    <section class="bg-primary" id="about" style="
+    padding-top: 0px;
+    padding-bottom: 0px;
+	" >
+	<div class="container-fluid" style="background-color: #e43024;">
+      <div class="container" style="background-color: #e43024; text-align: justify;
+    text-justify: auto;">
+	    <br><br>
+		<h2 class="section-heading text-white" align = "center" style="font-family: 'Megrim', cursive; font-size: 205%; font-weight: bold;">About Us</h2>
+        <div class="row">
+          <div class="col-lg-5 mx-auto">
+            <h2 class="section-heading text-white text-center" style="font-family: 'Megrim', cursive;">TED</h2>
+            <hr class="light my-4">
+            <p class="text-faded mb-4">TED is a global foundation devoted to the overall mission of “Ideas Worth Spreading”. It started in 1984 as a conference bringing together people from three worlds: Technology, Entertainment, Design. Since then, its scope has become ever broader. With its two annual conferences, video website TED.com, initiatives and community projects, TED is now a platform and a global movement focused on meaningful change through the power of ideas. Few notable TED Speakers are Bill Gates, Al Gore, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Nandan Nilekani, Philippe Starck, Ngozi Okonjo-Iweala,Isabel Allende and UK Prime Minister GordonBrown.</p>
+          </div>
+		  <div class="col-lg-1 mx-auto text-center">
+		  </div>
+		  <div class="col-lg-5 mx-auto">
+		  <h2 class="section-heading text-white text-center" style="font-family: 'Megrim', cursive;">TEDx</h2>
+            <hr class="light my-4">
+            <p class="text-faded mb-4">TEDx was created in the spirit of TED’s mission, “Ideas Worth Spreading” at local levels. These self-organized events are branded TEDx, where x = independently organized TED event. The program is designed to give communities, organizations and individuals the opportunity to stimulate dialogue through TED-like experiences. At a TEDx event, TEDTalks videos and live speakers combine to spark deep discussion and connection in a small group. TEDx events are open source, local and community-driven events that inspire innovation, thought leadership and visionary insight. A TEDx license is free to obtain.</p>
+            
+		  </div>
+        </div>
+		<br><br>
+		<div class="row">
+		<div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white" style="font-family: 'Megrim', cursive;">TEDx SPIT</h2>
+            <hr class="light my-4">
+            <p class="text-faded mb-4" style="text-align: justify;
+    text-justify: auto;">We the students of Sardar Patel Institute of Technology, since 1995 have sought to bring knowledge to the most easily reachable sector of the surface for others. This year we have been honoured with a TEDx license which entitles us to host a TED talk where several influential and charismatic personalities will share their experience and showcase their knowledge. The talk is part of our annual cultural fest, UDAAN and is a pre-event.</p>
+            <a class="btn btn-dark btn-xl js-scroll-trigger" href="#portfolio" style="font-size: 1.4rem;">Get Started!</a>
+          </div>
+		</div>
+		<br><br><br>
+      </div>
+	  </div>
+    </section>
+
+	<!--
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">At Your Service</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Sturdy Templates</h3>
+              <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Ready to Ship</h3>
+              <p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Up to Date</h3>
+              <p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Made with Love</h3>
+              <p class="text-muted mb-0">You have to make your websites with love these days!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	-->
+	
+	<div id="myModal1" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content no-gutters">
+							<div class="modal-header">
+								<div class="col-md-3">
+								</div>
+								<div class="col-md-6">
+								<h4 class="modal-title text-center">TEDxSPIT</h4>
+								</div>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body row">
+								<div class="col-md-3">
+								</div>
+								<div class="col-md-6" align="center">
+									<h4 align="center">Content Unavailable</h4>
+								</div>
+								<div class="col-md-3">
+								</div>
+							</div>
+							<div class="modal-body row">
+								<div class="col-md-2">
+								</div>
+								<div class="col-md-8" align="center">
+									<p>Sorry! The website is still under maintenence</p>
+								</div>
+								<div class="col-md-2">
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+			</div>
+
+    <section class="p-0" id="portfolio">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters">
+		<div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="#" data-toggle="modal" data-target="#myModal1">
+              <img class="img-fluid" src="img/portfolio/thumbnails/loc.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    TEDxSPIT
+                  </div>
+                  <div class="project-name">
+                    Attend
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+		  
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="#" data-toggle="modal" data-target="#myModal1">
+              <img class="img-fluid" src="img/portfolio/thumbnails/events.png" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    TEDxSPIT
+                  </div>
+                  <div class="project-name" id="counter">
+                    Events
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="#" data-toggle="modal" data-target="#myModal1">
+              <img class="img-fluid" src="img/portfolio/thumbnails/speakers.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    TEDxSPIT
+                  </div>
+                  <div class="project-name">
+                    Speakers
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="#" data-toggle="modal" data-target="#myModal1">
+              <img class="img-fluid" src="img/portfolio/thumbnails/talks.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    TEDxSPIT
+                  </div>
+                  <div class="project-name">
+                    Talks
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="#" data-toggle="modal" data-target="#myModal1">
+              <img class="img-fluid" src="img/portfolio/thumbnails/partners.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    TEDxSPIT
+                  </div>
+                  <div class="project-name">
+                    Partners
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="#" data-toggle="modal" data-target="#myModal1">
+              <img class="img-fluid" src="img/portfolio/thumbnails/reg.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    TEDxSPIT
+                  </div>
+                  <div class="project-name">
+                    Register
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+	<!--
+    <section class="bg-dark text-white">
+      <div class="container text-center">
+        <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
+        <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
+      </div>
+    </section>
+	-->
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading" style="font-family: 'Megrim', cursive;">Let's Get In Touch!</h2>
+            <hr class="my-4">
+            <p class="mb-5">Have any queries, suggestions or feedbacks? Give us a call or send us an email and we will get back to you as soon as possible!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+            <p>+91-9987014677</p>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+            <p>
+              <a href="mailto:your-email@your-domain.com">info@tedxspit.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+  </body>
+
+</html>
