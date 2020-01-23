@@ -1,0 +1,485 @@
+@media only screen and (max-device-width: 480px) {
+  .jumbotron p {
+  	font-size: 95% !important;
+  }
+
+  .main-frame {
+  	background-size: cover !important;
+  }
+
+  .main-frame-content {
+  	margin-left: 0px !important;
+  	width: 100% !important;
+  	text-align: center !important;
+  }
+
+  .hidden.mobile-show {
+  	display: block !important;
+  }
+
+  .description {
+  	text-align: center !important; 
+  }
+
+  .description h1, .speakers h1, .team h1, .sponsors h1 {
+  	font-size: 200% !important;
+  }
+
+  .description p, .tab-content div, .speaker p {
+	font-size: 100% !important;
+  }
+
+  .nav-tabs a {
+  	font-size: 80% !important;
+  }
+
+  .speakers-row div.col-md-4 {
+	padding: 5px !important;
+  }
+
+   .tab-div {
+   	padding: 5px !important;
+  }
+
+   footer div.col-md-2, footer div.col-md-5 {
+  	text-align: center;
+  }
+
+  .flex {
+  	justify-content: center;
+  }
+
+  .underline {
+	padding-bottom: 10px !important;
+  }
+
+   .team .team-description, .sponsors-description {
+	font-size: 100% !important;
+	margin-bottom: 30px;
+  }
+
+  .speakers-description {
+  	font-size: 100% !important;
+  }
+
+  .speakers h2 {
+  	font-size: 150% !important;
+  }
+  
+  .team p {
+	/*line-height: 1em;*/
+	font-size: 100% !important;
+  }
+
+  .white-popup img {
+	  float: none !important;
+	  margin-right: 0px;
+  }
+
+  .white-popup {
+	  text-align: center !important;
+  }
+
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+
+/* Navigation Bar Styles */
+
+.navbar-inverse {
+	border-radius: 0px;
+	background-color: #112C3B;
+	margin: 0px;
+	color: white;
+	padding: 10px;
+	font-size: 110%;
+	border: 0px;
+}
+
+.normal-links {
+	color: #ccc !important;
+	padding-bottom: 3px !important;
+	padding-right: 1px !important;
+	padding-left: 1px !important;
+	margin-left: 15px !important;
+	margin-right: 15px !important;
+}
+
+.normal-links:hover {
+	color: #FFF !important;
+	padding-bottom: 3px !important;
+	padding-right: 1px !important;
+	padding-left: 1px !important;
+	border-bottom: 2px solid #FFF	;
+	cursor: pointer;
+}
+
+.register-btn {
+	color: #ccc !important;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 8px !important;
+	margin-top: 8px;
+}
+
+.navbar-right li a {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.navbar-right {
+	padding-right: 20px;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-nav {
+	margin-top: 10px;
+}
+
+.navbar-br {
+	height: 80px;
+	width: 320px;
+	background: url(images/tedx_logo_white.png) no-repeat center center;
+	background-size: contain;
+	margin-left: 30px;
+	margin-bottom: 10px;
+	padding: 20px;
+	display: inherit;
+}
+
+/* Jumbotron Styles */
+
+
+.jumbotron {
+	border-radius: 0px !important;
+	margin-bottom: 0px;
+	font-weight: 300 !important;
+	position: relative;
+}
+
+.jumbotron h1, .jumbotron h3 {
+	font-weight: lighter !important;
+	color: #EDEDED !important;
+}
+
+.jumbotron p {
+	color: #bbb;
+}
+
+.jumbotron .date {
+	font-size: 200%;
+}
+
+.main-frame {
+	background: url(images/background2.png) no-repeat center center fixed;
+	background-size: cover;
+	height: 88vh;
+}
+
+.main-frame-content {
+	position: absolute;
+	top: 5%;
+	color: #ddd;
+	padding: 15px;
+	margin-left: 80px;
+	font-weight: lighter;
+	margin-top: 30px;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: flex-end;
+}
+
+.flex div {
+	padding: 10px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.venue p {
+	border-left: 1px solid white;
+	margin-left: 5px;
+	padding-left: 15px;
+}
+
+#countdown {
+	color: white;
+	font-size: 160%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: lighter;
+	border-top: 1px solid #bbb;
+	border-bottom: 1px solid #bbb;
+}
+
+/* Theme Styles */
+
+.theme {
+	padding: 50px;
+}
+
+.description {
+	padding: 30px;
+	color: #112C3B;
+}
+
+.description h1 {
+	font-size: 350%;
+	margin-top: 0px;
+
+}
+
+.description p, .tab-content div {
+	font-size: 130%;
+}
+
+.tab-div {
+	padding: 30px;
+}
+
+.nav-tabs {
+	border: 0px;
+}
+
+.nav-tabs a {
+	font-size: 150%;
+	font-weight: 400;
+	color: #aaa !important;
+	border: 0px !important;
+}
+
+.nav-tabs li.active a {
+	background-color: #eee !important;
+	color: #112C3B !important;
+}
+
+.nav-tabs li a:hover {
+	color: #112C3B !important;
+	background-color: #eee !important;
+}
+
+.tab-content {
+	border: 4px solid #eee;
+	/* Remove height once content is available */
+	min-height: 400px;
+	padding: 30px;
+	padding-top: 40px;
+}
+
+.underline {
+	padding-bottom: 15px;
+	border-bottom: 1px solid red;
+}
+
+/* Speakers Styles */
+
+.speakers, .sponsors, .team {
+	padding: 50px;
+}
+
+.speakers h1, .speaker-name, .sponsors h1, .team h1 {
+	/*font-family: 'Oleo Script', cursive;*/
+	color: #112C3B;
+	font-weight: 400;
+}
+
+.speakers-row div.col-md-4 {
+	padding: 30px;
+	padding-left: 50px;
+	padding-right: 50px;
+	/*height: 150px;
+	border: 1px solid orange;*/
+}
+
+.speakers-row div.col-md-4 div {
+	/*border: 1px solid red;
+	height: 90px;*/
+}
+
+.speaker {
+	box-shadow: 5px 5px 5px 0px rgba(245,240,245,1);
+}
+
+.speaker img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.speaker p {
+	padding: 25px;
+	font-size: 115%;
+}
+
+/* Previous Speakers Styles */
+
+.prev-speakers-row {
+	margin-top: 50px;
+}
+
+/* Sponsors Styles */
+
+.sponsor-container div {
+	margin: 10px;
+}
+
+
+.sponsors img {
+	height: 130px;
+	max-width: 320px;
+}
+
+/* Team Styles */
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+div.dp, div.dp-prev {
+	height: 160px;
+	width: 160px;
+	margin: 0 auto;
+	opacity: 1;
+	position: relative;
+	transition: opacity 0.2s ease-in-out;
+	border-radius: 100%;
+	background-size: 100% 100%;
+}
+
+div.dp:hover, div.dp-prev:hover {
+	opacity: 0.8;
+}
+
+.dp-prev img {
+	height: 40px;
+	width: 40px;
+}
+
+div.dp div {
+	position: absolute;
+	bottom: 35px;
+	left: 35%;
+}
+
+div.dp-prev div {
+	position: absolute;
+	bottom: 50px;
+	left: 35%;
+}
+
+.team h3 {
+	font-weight: 400;
+}
+
+.team p {
+	/*line-height: 1em;*/
+	font-size: 125%;
+}
+
+.team-row {
+	margin-bottom: 40px;
+}
+
+.team .team-description, .sponsors-description {
+	font-size: 22px;
+	margin-bottom: 30px;
+}
+
+ .speakers-description {
+ 	font-size: 22px;
+ }
+
+
+/* Footer Styles */
+footer {
+	background-color: #112C3B;
+	color: #9A9FA0;
+	padding: 50px;
+	font-weight: 300;
+}
+
+address, footer a, footer p {
+	font-size: 113%;
+}
+
+footer p {
+	margin-top: 15px;
+	padding-right: 30px;
+}
+
+footer a {
+	color: #9A9FA0;
+}
+
+footer a:hover {
+	color: #9A9FA0;
+}
+
+footer h3 {
+	color: #E0E0E0;
+}
+
+.footer-flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+footer div.col-md-5 {
+	padding-left: 50px;
+}
+
+/* Navigation Bar Responsive Styles */
+
+body {
+    padding-top: 100px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    z-index: 3;
+}
+
+.nav-up {
+    top: -120px;
+}
+
+/* Popups */
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 30px;
+  width: auto;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.white-popup img {
+	max-width: 200px;
+	margin-right: 20px;
+	float: left;
+}
+
+
+
