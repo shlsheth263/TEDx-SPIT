@@ -52,11 +52,11 @@ $(document).ready(function() {
         });
     });
 
-    $("#speakers-btn").on('click',function() {
-        $('html, body').animate({
-            'scrollTop' : $("#speakers").position().top
-        });
-    });
+    // $("#speakers-btn").on('click',function() {
+    //     $('html, body').animate({
+    //         'scrollTop' : $("#speakers").position().top
+    //     });
+    // });
 
     $("#sponsors-btn").on('click',function() {
         $('html, body').animate({

@@ -186,9 +186,10 @@ body {
 }
 
 .main-frame {
-	background: url(images/background2.png) no-repeat center center fixed;
-	background-size: cover;
+	background: url(images/Theme_Reveal_1.png) no-repeat center center fixed;
+	background-size: 100% 100%;
 	height: 88vh;
+	background-position: top 4em right;
 }
 
 .main-frame-content {
@@ -481,5 +482,9 @@ header {
 	float: left;
 }
 
-
+.tedred .active a,
+.tedred .active a:hover, 
+.tedred .active a:focus{
+    background-color: #e43024 !important;
+}
 
