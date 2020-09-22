@@ -1,0 +1,469 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* width: 100vw; */
+    /* height: 100vh; */
+    overflow-y: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    /* background: black; */
+    background: radial-gradient( circle at 100% 100%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 75%);
+    position: relative;
+}
+
+.layer-three {
+    width: 100vw;
+    height: 100vh;
+    /* background: red; */
+    background-image: url("../../media/landing/layer3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    animation: moveUp ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+.layer-two {
+    width: 100vw;
+    height: 100vh;
+    /* background: blue; */
+    background-image: url("../../media/landing/layer2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    animation: moveUp ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.days-remaining {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: fadeInContent ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 4.5s;
+}
+
+.day {
+    transform-origin: 50% 50%;
+    width: 8vw;
+    height: 60vh;
+    background-color: rgba(255, 0, 0, 1);
+    position: absolute;
+    top: 31vh;
+    left: 77.4vw;
+}
+
+.building {
+    width: 100vw;
+    height: 100vh;
+    /* background: green; */
+    background-image: url("../../media/landing/building.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    animation: moveUp ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: fadeInContent ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 4.5s;
+}
+
+.content-placer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    width: 25%;
+    height: 10%;
+    background-image: url("../../media/tedxlogo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    display: none;
+}
+
+.event-logo {
+    width: 25%;
+    height: 30%;
+    background-image: url("../../media/tedxlogo2020.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* border: 2px solid white; */
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.countdown {
+    width: 25%;
+    height: 5%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-size: xx-large;
+    margin: 2px 0;
+    text-align: center;
+}
+
+.social-handles {
+    width: 25%;
+    height: 5%;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    text-align: center;
+}
+
+.social-handles>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1.8% 0;
+}
+
+.social-handles>ul>li {
+    list-style: none;
+    font-size: 30px;
+}
+
+.next-btn {
+    transform-origin: 50% 50%;
+    width: 6vw;
+    height: 12vh;
+    background-color: white;
+    position: absolute;
+    top: 85vh;
+    left: 47vw;
+    border-radius: 50%;
+    box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.3);
+    transition: background-color 1s;
+}
+
+.next-btn>a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 60px;
+    text-decoration: none;
+    color: red;
+    transition: color 1s;
+    font-size: 6.5vh;
+    font-weight: 600;
+}
+
+.next-btn>a>i {
+    margin: 25%;
+    width: 50%;
+    height: 50%;
+}
+
+.next-btn:hover {
+    background-color: red;
+}
+
+.next-btn:hover a {
+    color: white;
+    animation: jiggle 2s ease 0 2 forwards normal;
+}
+
+@keyframes moveUp {
+    0% {
+        top: 100vh;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes fadeInContent {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Mobiles and Tablets View */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    *,
+    html {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        /* width: 100vw; */
+        /* height: 100vh; */
+        overflow-y: hidden;
+        font-family: 'Poppins', sans-serif;
+    }
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    .container {
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        /* background: black; */
+        background: radial-gradient( circle at 100% 100%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 75%);
+        position: relative;
+    }
+    .layer-three {
+        width: 100vw;
+        height: 100vh;
+        /* background: red; */
+        background-image: url("../../media/landing/layer3.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 100vh;
+        left: 0;
+        animation: moveUp ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 0.5s;
+        display: none;
+    }
+    .layer-two {
+        width: 100vw;
+        height: 100vh;
+        /* background: blue; */
+        background-image: url("../../media/landing/layer2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 100vh;
+        left: 0;
+        animation: moveUp ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+        display: none;
+    }
+    .days-remaining {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        animation: fadeInContent ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 4.5s;
+        display: none;
+    }
+    .day {
+        transform-origin: 50% 50%;
+        width: 8vw;
+        height: 60vh;
+        background-color: rgba(255, 0, 0, 1);
+        position: absolute;
+        top: 31vh;
+        left: 77.4vw;
+    }
+    .building {
+        width: 100vw;
+        height: 100vh;
+        /* background: green; */
+        background-image: url("../../media/landing/building.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 100vh;
+        left: 0;
+        animation: moveUp ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 1.5s;
+        display: none;
+    }
+    .content {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        animation: fadeInContent ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 0s;
+    }
+    .content-placer {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .logo {
+        width: 25%;
+        height: 10%;
+        background-image: url("../../media/tedxlogo.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 25%;
+        left: 5%;
+        display: none;
+    }
+    .event-logo {
+        width: 80%;
+        height: 25%;
+        background-image: url("../../media/tedxlogo2020.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        /* border: 2px solid white; */
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        margin: 0 5%;
+    }
+    .countdown {
+        width: 80%;
+        height: 5%;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        font-size: xx-large;
+        margin: 2px 5%;
+        text-align: center;
+    }
+    .social-handles {
+        width: 80%;
+        height: 5%;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        text-align: center;
+        margin: 0 5%;
+    }
+    .social-handles>ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 1.8% 0;
+    }
+    .social-handles>ul>li {
+        list-style: none;
+        font-size: 30px;
+    }
+    .next-btn {
+        transform-origin: 0% 0%;
+        width: 40vw;
+        height: 7vh;
+        background-color: white;
+        position: absolute;
+        top: 65vh;
+        left: 30vw;
+        border-radius: 0%;
+        box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.3);
+        transition: background-color 1s;
+    }
+    .next-btn>a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        font-size: 60px;
+        text-decoration: none;
+        color: red;
+        transition: color 1s;
+        font-size: 5vh;
+        font-weight: 600;
+    }
+    .next-btn>a>i {
+        margin: 2% 41%;
+        width: 18%;
+        height: 80%;
+    }
+    .next-btn:hover {
+        background-color: red;
+    }
+    .next-btn:hover a {
+        color: white;
+        animation: jiggle 2s ease 0 2 forwards normal;
+    }
+    @keyframes moveUp {
+        0% {
+            top: 100vh;
+        }
+        100% {
+            top: 0;
+        }
+    }
+    @keyframes fadeInContent {
+        0% {
+            opacity: 0;
+        }
+        30% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}

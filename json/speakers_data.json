@@ -1,0 +1,102 @@
+{
+    "speaker": [{
+            "name": "Neville Shah",
+            "occupation": "Executive Creative Director at Ogilvy & Mather, Stand-up Comedian",
+            "talk_name": "Talk Name One",
+            "write_up": "Neville Shah has broken all pre-conceived notions that have been thrown his way regarding age and time. He has stood behind his principle stating that \"Finding one's forte requires patience\"; leading him to become one of the most popular stand-up comedians in the country. ",
+            "facebook": "https://www.facebook.com/craziebawa/",
+            "insta": "https://www.instagram.com/craziebawa/",
+            "linkedin": "https://in.linkedin.com/in/neville-shah-50610b8",
+            "twitter": "#",
+            "picture_loc": "./media/speakers/neville.png"
+        },
+        {
+            "name": "Ankit Mehrotra",
+            "occupation": "Co-Founder & CEO at Dineout",
+            "talk_name": "Talk Name Two",
+            "write_up": "Ankit Mehrotra - The leading titan behind the revolutionary food-tech enterprise, Dineout, has imbibed the principle stating that \"Small things make perfection but perfection is no small thing.\" This very vision has allowed him to expand the company from a visionary start-up to one of the most used applications in the Indian market today ",
+            "facebook": "#",
+            "insta": "https://www.instagram.com/ankit.mehrotra/",
+            "linkedin": "https://in.linkedin.com/in/ankitatdineout",
+            "twitter": "#",
+            "picture_loc": "./media/speakers/ankit.png"
+        },
+        {
+            "name": "Adela Strakova",
+            "occupation": "CXO - Chezuba",
+            "talk_name": "Talk Name Four",
+            "write_up": "Adela Strakova is the driving force behind global NGO and volunteer logistics technology, Chezuba, one of the most innovative Indian start-ups. Her success is based off the philosophy: “Help is always present. It is for us to decide how the needy obtain it.” ",
+            "facebook": "#",
+            "insta": "#",
+            "linkedin": "#",
+            "twitter": "#",
+            "picture_loc": "./media/speakers/adela.png"
+        },
+        {
+            "name": "Arif Chaudhary",
+            "occupation": "B-Boy",
+            "talk_name": "Talk Name Five",
+            "write_up": "Arif Chaudhary is a 22-year old B-Boy from Mumbai, and a three time national champion of BC One. He is a self-taught dancer and goes by the stage name Flying Machine. What he lacks in age, he more than makes up for in talent and perseverance. ",
+            "facebook": "https://www.facebook.com/arif.chaudhary.9",
+            "insta": "https://www.instagram.com/flyingmachine_official/",
+            "linkedin": "#",
+            "twitter": "#",
+            "picture_loc": "./media/speakers/arif.png"
+        },
+        {
+            "name": "Lydian Nadhaswaram",
+            "occupation": "Multi-Instrumentalist and Composer ",
+            "talk_name": "Talk Name Six",
+            "write_up": "As one of the most talented child prodigies of the music world, Lydian Nadhaswaram has grown up playing the piano from a starry-eyed boy to winning the TV show \"The World's Best\". ",
+            "facebook": "https://www.facebook.com/lydianadhaswaram/",
+            "insta": "https://www.instagram.com/lydiannadhaswaramofficial/?hl=en",
+            "linkedin": "#",
+            "twitter": "#",
+            "picture_loc": "./media/speakers/lydian.png"
+        },
+        {
+            "name": "Imtiaz Qureshi",
+            "occupation": "Padma Shri, Master Chef at ITC.",
+            "talk_name": "Talk Name Eight",
+            "write_up": "A Padma Shree winning culinary wizard, Imtiaz Qureshi has been a paragon of Indian cuisine in the country, becoming a widely adored figure in the culinary scene across the country. The master chef at the ITC Hotel franchise, Imtiaz has been at the face of the brand and has constantly played a great role in developing and nurturing the future of India's cuisine..",
+            "facebook": "https://www.facebook.com/legendofimtiazqureshi/",
+            "insta": "https://www.instagram.com/legendofimtiaz/?hl=en",
+            "linkedin": "https://in.linkedin.com/in/imtiaz-qureshi-269b1830",
+            "twitter": "#",
+            "picture_loc": "./media/speakers/imtiaz.png"
+        },
+        {
+            "name": "Piyush Bhisekar",
+            "occupation": "Poet, Singer-Songwriter",
+            "talk_name": "Talk Name Eight",
+            "write_up": "Piyush Bhisekar is a poet and an award winning singer-songwriter who released his debut EP in 2018 with six melodic, soulful and cathartic musical pieces.",
+            "facebook": "https://www.facebook.com/PiyushBhisekar/",
+            "insta": "https://www.instagram.com/piyush_bhisekar/?hl=en",
+            "linkedin": "#",
+            "twitter": "#",
+            "picture_loc": "./media/speakers/piyush.png"
+        },
+        {
+            "name": "Major Mohammad Ali Shah",
+            "occupation": "Indian Theater Personality, Actor and Former Soldier",
+            "talk_name": "Talk Name Eight",
+            "write_up": "An award winning theatre actor, a nationally celebrated film actor, a IPL match coordinator, a respected public speaker, an IIM graduate, a brave army veteran and an international TEDx speaker, Major Mohammad Ali Shah - the master of many trades is a true Indian icon, traversing and conquering his many field.",
+            "facebook": "#",
+            "insta": "#",
+            "linkedin": "#",
+            "twitter": "#",
+            "picture_loc": "./media/speakers/major_shah.png"
+        },
+        {
+            "name": "Ramesh Kumar Soni",
+            "occupation": "Co-Founder and Director at VayuJal Technologies Private Limited",
+            "talk_name": "Talk Name Eight",
+            "write_up": "Ramesh Kumar Soni's creation, a machine that can generate water from thin air, has the power to revolutionize the world. This could very well be the solution to all of our water woes..",
+            "facebook": "https://www.facebook.com/rameshsoni2010",
+            "insta": "#",
+            "linkedin": "https://in.linkedin.com/in/ddkvrs",
+            "twitter": "#",
+            "picture_loc": "./media/speakers/ramesh.png"
+        }
+    ]
+}

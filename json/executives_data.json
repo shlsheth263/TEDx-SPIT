@@ -1,0 +1,94 @@
+{
+    "executive" : [
+        {
+            "name" : "Pulin Prabhu", 
+            "lead" : "Licensee and Curator", 
+            "write_up" : "Can tell the difference between Space Grey and Silver. Catch me behind the lens or staring at the screen trying to work new ways of entwining Technology, Managment and Finance.", 
+            "facebook" : "https://www.facebook.com/pulinprabhu02/", 
+            "insta" : "https://www.instagram.com/pulinprabhu/", 
+            "linkedin" : "https://www.linkedin.com/in/pulinprabhu", 
+            "picture_loc" : "./media/executives/licensee.jpg"
+        },
+        {
+            "name" : "Pratik Kakade", 
+            "lead" : "Co - Licensee", 
+            "write_up" : "Traveller. Opportunist. Philosophical.", 
+            "facebook" : "https://www.facebook.com/pratik.kakade.3192", 
+            "insta" : "https://www.instagram.com/pratikkakade2705/", 
+            "linkedin" : "https://www.linkedin.com/in/pratik-kakade-673a80152", 
+            "picture_loc" : "./media/executives/co_licensee.jpg"
+        },
+        {
+            "name" : "Rahul Panjwani", 
+            "lead" : "Curator", 
+            "write_up" : "Rebel. Demotional. Jugaadu. ", 
+            "facebook" : "https://www.facebook.com/profile.php?id=100017323215435", 
+            "insta" : "https://www.instagram.com/rahulpanjwani508/", 
+            "linkedin" : "https://www.linkedin.com/in/rahul-panjwani/", 
+            "picture_loc" : "./media/executives/curator.jpg"
+        },
+        {
+            "name" : "Suhani Gupta", 
+            "lead" : "Speaker Research Head", 
+            "write_up" : "Photographer. Creative. ", 
+            "facebook" : "https://www.facebook.com/suhani.gupta.568", 
+            "insta" : "https://instagram.com/suhanigupta?igshid=xl78i18ihzbq", 
+            "linkedin" : "http://linkedin.com/in/suhani-gupta-96491a171", 
+            "picture_loc" : "./media/executives/speaker_research.jpg"
+        },
+        {
+            "name" : "Karthik Rangasai Sivaraman", 
+            "lead" : "Technical Team Head", 
+            "write_up" : "Optimistic. Visionary. Photographer. ", 
+            "facebook" : "https://www.facebook.com/karthik.rangasai", 
+            "insta" : "https://www.instagram.com/_rangasai_/", 
+            "linkedin" : "https://www.linkedin.com/in/karthikrangasai/", 
+            "picture_loc" : "./media/executives/technical.jpg"
+        },
+        {
+            "name" : "Dipanshu Khandelwal", 
+            "lead" : "Logistics Head", 
+            "write_up" : "Adventurous. Gregarious. Persistent. ", 
+            "facebook" : "https://www.facebook.com/dipanshu.khandelwal.9", 
+            "insta" : "https://instagram.com/dipsystories", 
+            "linkedin" : "https://www.linkedin.com/in/dipanshu-khandelwal-7890ba149", 
+            "picture_loc" : "./media/executives/logistics.jpg"
+        },
+        {
+            "name" : "Shivali Ratra", 
+            "lead" : "Security and Hospitality Head", 
+            "write_up" : "Jovial. Compassionate. Pragmatic. ", 
+            "facebook" : "https://www.facebook.com/shivali.ratra", 
+            "insta" : "https://www.instagram.com/shivali_ratra/", 
+            "linkedin" : "https://www.linkedin.com/in/shivali-ratra-395b90119", 
+            "picture_loc" : "./media/executives/hospitality.jpg"
+        },
+        {
+            "name" : "Ritul Tripathi", 
+            "lead" : "Design Team Head", 
+            "write_up" : "Creative. Feisty. Jolly.", 
+            "facebook" : "https://www.facebook.com/ritzz.tripathi.1", 
+            "insta" : "https://www.instagram.com/ritul.__.tripathi/", 
+            "linkedin" : "https://www.linkedin.com/in/ritul-tripathi-7950681a0/", 
+            "picture_loc" : "./media/executives/design.jpg"
+        },
+        {
+            "name" : "Saransh Agarwal", 
+            "lead" : "Sponsorship Head", 
+            "write_up" : "Assiduous. Curious. Hustler. ", 
+            "facebook" : "https://m.facebook.com/saranshagarwal0407", 
+            "insta" : "https://www.instagram.com/asaransh/", 
+            "linkedin" : "https://www.linkedin.com/in/saransh-0407", 
+            "picture_loc" : "./media/executives/sponsorship.png"
+        },
+        {
+            "name" : "Soumyadeep Basu", 
+            "lead" : "Multimedia Head", 
+            "write_up" : "Observant. Passionate. Meticulous. ", 
+            "facebook" : "https://www.facebook.com/soumyadeep.basu.14", 
+            "insta" : "https://instagram.com/soumyadeep.basu033?igshid=fzr2cqe6mno3", 
+            "linkedin" : "https://www.linkedin.com/in/soumyadeep-basu-309ba2184", 
+            "picture_loc" : "./media/executives/multimedia.jpg"
+        }
+    ]
+}

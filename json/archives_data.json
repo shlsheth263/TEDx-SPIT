@@ -1,0 +1,44 @@
+{
+    "archive" : [
+        {
+            "name" : "Ayush Mehra", 
+            "talk" : "Enjoy the Jounrey", 
+            "link" : "https://www.youtube.com/embed/le6eNngljto"
+        },
+        {
+            "name" : "Kaam Bhari", 
+            "talk" : "Living Life One Verse at a Time", 
+            "link" : "https://www.youtube.com/embed/lGJoaVHYifU"
+        },
+        {
+            "name" : "Sumeet Vyas", 
+            "talk" : "Find Your Fuel", 
+            "link" : "https://www.youtube.com/embed/aWCDFi2tZiY"
+        },
+        {
+            "name" : "Eisha Chopra", 
+            "talk" : "The Power of an Audience to Change Society", 
+            "link" : "https://www.youtube.com/embed/zX-6UFQuiXk"
+        },
+        {
+            "name" : "Kavish Sinha", 
+            "talk" : "Passion, What?", 
+            "link" : "https://www.youtube.com/embed/eEknyfpLdLI"
+        },
+        {
+            "name" : "Ameya Kanawade", 
+            "talk" : "Fumbling My Way to Fluency, How I got over My Stutter",
+            "link" : "https://www.youtube.com/embed/xrXHYaUUNGU"
+        },
+        {
+            "name" : "Aakshaye Rathi", 
+            "talk" : "The Impact of OTT Platforms on Cinema", 
+            "link" : "https://www.youtube.com/embed/f8ppJS210RA"
+        },
+        {
+            "name" : "Ali Mustafa Shaikh", 
+            "talk" : "Crowd-sourcing Data for Machine Learning", 
+            "link" : "https://www.youtube.com/embed/wwZKOmoNxMo"
+        }
+    ]
+}

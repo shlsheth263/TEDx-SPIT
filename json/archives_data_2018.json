@@ -1,0 +1,44 @@
+{
+    "archive" : [
+        {
+            "name" : "Vikas Gupta", 
+            "talk" : "Finding Yourself", 
+            "link" : "https://www.youtube.com/embed/xjfVrWyU5oM"
+        },
+        {
+            "name" : "Manish Advani", 
+            "talk" : "The Art of Story Telling", 
+            "link" : "https://www.youtube.com/embed/-eXikXK9SZ8"
+        },
+        {
+            "name" : "Nidhika Bahl", 
+            "talk" : "The Art of Creating Meaningful and Everlasting Relationships", 
+            "link" : "https://www.youtube.com/embed/6YVMYI2qMFI"
+        },
+        {
+            "name" : "Rashi Mal", 
+            "talk" : "Choose the Life You Want to Live", 
+            "link" : "https://www.youtube.com/embed/3GLsR29QHAU"
+        },
+        {
+            "name" : "Swapan Rajdev", 
+            "talk" : "The Age of Artificial Intelligence", 
+            "link" : "https://www.youtube.com/embed/5FP0oqRUfHY"
+        },
+        {
+            "name" : "Mohsin Memon", 
+            "talk" : "Games can solve real problems",
+            "link" : "https://www.youtube.com/embed/7gT5gO107nE"
+        },
+        {
+            "name" : "Max Fernandes", 
+            "talk" : "Exploring the School of Art", 
+            "link" : "https://www.youtube.com/embed/f5kLOBzF34g"
+        },
+        {
+            "name" : "Robin Chaurasia", 
+            "talk" : "Social Change", 
+            "link" : "https://www.youtube.com/embed/qQ836w2kWf8"
+        }
+    ]
+}
