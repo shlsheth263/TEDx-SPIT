@@ -1,13 +1,13 @@
 // window.location.reload("www.tedxbitshyderabad.com");
 
 //  LANDING PART STARTS
-var eventDate = new Date(2020, 09, 13);
+var eventDate = new Date(2020, 10, 06);
 var today = new Date();
 var remainingDays = Math.ceil((eventDate - today) / (1000 * 60 * 60 * 24));
 if (remainingDays == 1) {
     $(".landing-countdown").text(remainingDays + " Day To Go!")
 } else if (remainingDays < 0) {
-    $(".landing-countdown").text("13th October 2020")
+    $(".landing-countdown").text("6th November 2020")
 } else {
     $(".landing-countdown").text(remainingDays + " Days To Go!")
 }
