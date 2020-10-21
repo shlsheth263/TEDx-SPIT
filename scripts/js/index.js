@@ -313,6 +313,15 @@ window.onload = function() {
                     "picture_loc" : "./media/team/Romit_Kankaria.jpg"
                 },
                 {
+                    "name" : "Himanshu Joshi", 
+                    "lead" : "Curator", 
+                    "write_up" : "", 
+                    "facebook" : "https://www.facebook.com/himanshu.joshi.129794", 
+                    "insta" : "https://www.instagram.com/thehimanshuj/", 
+                    "linkedin" : "https://www.linkedin.com/in/himanshu-joshi-512a1a184", 
+                    "picture_loc" : "./media/team/Himanshu_Joshi.jpg"
+                },
+                {
                     "name" : "Harsh Agarwal", 
                     "lead" : "Exective Producer", 
                     "write_up" : "Have a passion for playing with numbers, be it the binaries of code or the intricacies of the stock market. Give me a situation, and I'm ready to grow from it, and given a chance, make more from it.", 
@@ -836,7 +845,7 @@ if (screen.width > 1024) {
     let pushedBy_sp = 0;
 
     // Executive Variables
-    const noOfExecutives = 7;
+    const noOfExecutives = 8;
     let counter_ex = 0;
     let pushedBy_ex = 0;
 
