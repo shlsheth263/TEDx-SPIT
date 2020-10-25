@@ -342,7 +342,7 @@ window.onload = function() {
                 {
                     "name" : "Saurabh Rane", 
                     "lead" : "Creative Director", 
-                    "write_up" : "Optimistic. Visionary. Photographer. ", 
+                    "write_up" : "Manifesting the vision of TEDxSPIT though digital prints, liberal yet detail-oriented work that makes you go wow!", 
                     "facebook" : "#", 
                     "insta" : "https://www.instagram.com/saurabhrane11", 
                     "linkedin" : "https://in.linkedin.com/in/saurabhrane1199", 
@@ -356,6 +356,33 @@ window.onload = function() {
                     "insta" : "https://www.instagram.com/vinayak_iyer_/", 
                     "linkedin" : "https://www.linkedin.com/in/vinayak-iyer-/", 
                     "picture_loc" : "./media/team/Vinayak_Iyer.jpg"
+                },
+                {
+                    "name" : "Urja Kulkarni", 
+                    "lead" : "Content Strategist", 
+                    "write_up" : "", 
+                    "facebook" : "#", 
+                    "insta" : "https://www.instagram.com/urjax/", 
+                    "linkedin" : "https://www.linkedin.com/in/urja-kulkarni/", 
+                    "picture_loc" : "./media/team/Urja_Kulkarni.jpg"
+                },
+                {
+                    "name" : "Raksha Jain", 
+                    "lead" : "Finance Head", 
+                    "write_up" : "", 
+                    "facebook" : "https://www.facebook.com/raksha.jain.167", 
+                    "insta" : "https://www.instagram.com/rakshaajain/?hl=en", 
+                    "linkedin" : "https://www.linkedin.com/in/raksha-jain13/", 
+                    "picture_loc" : "./media/team/Raksha_Jain.jpg"
+                },
+                {
+                    "name" : "Parth Kitawat", 
+                    "lead" : "Finance Head", 
+                    "write_up" : "", 
+                    "facebook" : "#", 
+                    "insta" : "https://www.instagram.com/parthkitawat/", 
+                    "linkedin" : "https://www.linkedin.com/in/parth-kitawat-4a8b62146/", 
+                    "picture_loc" : "./media/team/Parth_Kitawat.jpg"
                 }
             ]
         }
@@ -845,7 +872,7 @@ if (screen.width > 1024) {
     let pushedBy_sp = 0;
 
     // Executive Variables
-    const noOfExecutives = 8;
+    const noOfExecutives = 11;
     let counter_ex = 0;
     let pushedBy_ex = 0;
 
