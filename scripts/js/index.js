@@ -360,7 +360,7 @@ window.onload = function() {
                 {
                     "name" : "Urja Kulkarni", 
                     "lead" : "Content Strategist", 
-                    "write_up" : "", 
+                    "write_up" : "She’s a foodie who is always up for new adventures.", 
                     "facebook" : "#", 
                     "insta" : "https://www.instagram.com/urjax/", 
                     "linkedin" : "https://www.linkedin.com/in/urja-kulkarni/", 
@@ -369,7 +369,7 @@ window.onload = function() {
                 {
                     "name" : "Raksha Jain", 
                     "lead" : "Finance Head", 
-                    "write_up" : "", 
+                    "write_up" : "A knack for creativity, combing that with the principles of design thinking she strives to come up with solutions to complex problems. New found interest in finance just makes the entire process more wholesome.", 
                     "facebook" : "https://www.facebook.com/raksha.jain.167", 
                     "insta" : "https://www.instagram.com/rakshaajain/?hl=en", 
                     "linkedin" : "https://www.linkedin.com/in/raksha-jain13/", 
@@ -378,11 +378,47 @@ window.onload = function() {
                 {
                     "name" : "Parth Kitawat", 
                     "lead" : "Finance Head", 
-                    "write_up" : "", 
+                    "write_up" : "He’s passionate about everything related to finance and startups. He believes that the biggest risk is in not taking any risk.", 
                     "facebook" : "#", 
                     "insta" : "https://www.instagram.com/parthkitawat/", 
                     "linkedin" : "https://www.linkedin.com/in/parth-kitawat-4a8b62146/", 
                     "picture_loc" : "./media/team/Parth_Kitawat.jpg"
+                },
+                {
+                    "name" : "Kareena Redij", 
+                    "lead" : "PR Head", 
+                    "write_up" : "She’s audacious, bright and a silly intellect. Being quick-witted is her superpower. She’s here to pitch in new ideas and add a hint of fun in all that she does.", 
+                    "facebook" : "#", 
+                    "insta" : "https://instagram.com/kareenaredij?igshid=u32x5l8zfhev", 
+                    "linkedin" : "www.linkedin.com/in/kareena-redij", 
+                    "picture_loc" : "./media/team/Kareena_Redij.jpg"
+                },
+                {
+                    "name" : "Taksh Soni", 
+                    "lead" : "PR Head", 
+                    "write_up" : "Colour blind, but coloured mind. Knows his way through people very well!", 
+                    "facebook" : "#", 
+                    "insta" : "https://www.instagram.com/_takshsoni_", 
+                    "linkedin" : "https://www.linkedin.com/in/taksh-soni-444990173/", 
+                    "picture_loc" : "./media/team/Taksh_Soni.jpg"
+                },
+                {
+                    "name" : "Vedant Mathur", 
+                    "lead" : "Hospitality Head", 
+                    "write_up" : "He lives his life one day at a time, with a fresh-baked cookie, maybe a coffee, and maybe some chocolates, if he likes you he’ll probably get you one too.",
+                    "facebook" : "https://www.facebook.com/vedant.mathur.75/", 
+                    "insta" : "https://www.instagram.com/v_mathur/",
+                    "linkedin" : "https://www.linkedin.com/in/vedant-mathur/", 
+                    "picture_loc" : "./media/team/Vedant_Mathur.jpg"
+                },
+                {
+                    "name" : "Niharika Kadam", 
+                    "lead" : "Operations Head", 
+                    "write_up" : "Someone who gets well with all kinds of people and can be assertive without being rude!",
+                    "facebook" : "#", 
+                    "insta" : "https://www.instagram.com/niharikakadam",
+                    "linkedin" : "https://www.linkedin.com/in/niharika-kadam-ab32071b8/", 
+                    "picture_loc" : "./media/team/Niharika_Kadam.jpg"
                 }
             ]
         }
@@ -872,7 +908,7 @@ if (screen.width > 1024) {
     let pushedBy_sp = 0;
 
     // Executive Variables
-    const noOfExecutives = 11;
+    const noOfExecutives = 15;
     let counter_ex = 0;
     let pushedBy_ex = 0;
 
