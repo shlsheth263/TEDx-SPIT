@@ -52,34 +52,34 @@ $(".landing-next-btn-link").click(e => {
 // LANDING PART ENDS
 
 
-// var speaker_info = document.getElementById("speakers-info");
+var speaker_info = document.getElementById("speakers-info");
 var executive_info = document.getElementById("executives-info");
 var archive_info = document.getElementById("archives-info");
 var archive_info_2018 = document.getElementById("archives-info-2018");
 
 // SPEAKER VARIABLES
-// var speaker_cards = document.getElementById("speakers");
-// speaker_cards = speaker_cards.children[1].children[1];
-// var speaker_cards_len = speaker_cards.childElementCount;
-// var speakers = [];
-// for (var i = 0; i < speaker_cards.childElementCount; i++) {
-//     var card = speaker_cards.children[i];
-//     speakers.push(card.id);
-// }
+var speaker_cards = document.getElementById("speakers");
+speaker_cards = speaker_cards.children[1].children[1];
+var speaker_cards_len = speaker_cards.childElementCount;
+var speakers = [];
+for (var i = 0; i < speaker_cards.childElementCount; i++) {
+    var card = speaker_cards.children[i];
+    speakers.push(card.id);
+}
 
-// function Speaker(name, occupation, talk, write_up, fb, insta, lin, tw, picture) {
-//     this.name = name
-//     this.occupation = occupation
-//     this.talk = talk
-//     this.write_up = write_up
-//     this.fb = fb
-//     this.insta = insta
-//     this.lin = lin
-//     this.tw = tw
-//     this.picture = picture
-// }
+function Speaker(name, occupation, talk, write_up, fb, insta, lin, tw, picture) {
+    this.name = name
+    this.occupation = occupation
+    this.talk = talk
+    this.write_up = write_up
+    this.fb = fb
+    this.insta = insta
+    this.lin = lin
+    this.tw = tw
+    this.picture = picture
+}
 
-// var speakers_data = [];
+var speakers_data = [];
 
 
 // EXECUTIVE VARIABLES
@@ -171,116 +171,116 @@ function loadJSON(filename, callback) {
 
 window.onload = function() {
     // loadJSON("./json/speakers_data.json", function(response) {
-        // var data = {
-        //     "speaker": [{
-        //             "name": "Neville Shah",
-        //             "occupation": "Executive Creative Director at Ogilvy & Mather, Stand-up Comedian",
-        //             "talk_name": "Talk Name One",
-        //             "write_up": "Neville Shah has broken all pre-conceived notions that have been thrown his way regarding age and time. He has stood behind his principle stating that \"Finding one's forte requires patience\"; leading him to become one of the most popular stand-up comedians in the country. ",
-        //             "facebook": "https://www.facebook.com/craziebawa/",
-        //             "insta": "https://www.instagram.com/craziebawa/",
-        //             "linkedin": "https://in.linkedin.com/in/neville-shah-50610b8",
-        //             "twitter": "#",
-        //             "picture_loc": "./media/speakers/neville.png"
-        //         },
-        //         {
-        //             "name": "Ankit Mehrotra",
-        //             "occupation": "Co-Founder & CEO at Dineout",
-        //             "talk_name": "Talk Name Two",
-        //             "write_up": "Ankit Mehrotra - The leading titan behind the revolutionary food-tech enterprise, Dineout, has imbibed the principle stating that \"Small things make perfection but perfection is no small thing.\" This very vision has allowed him to expand the company from a visionary start-up to one of the most used applications in the Indian market today ",
-        //             "facebook": "#",
-        //             "insta": "https://www.instagram.com/ankit.mehrotra/",
-        //             "linkedin": "https://in.linkedin.com/in/ankitatdineout",
-        //             "twitter": "#",
-        //             "picture_loc": "./media/speakers/ankit.png"
-        //         },
-        //         {
-        //             "name": "Adela Strakova",
-        //             "occupation": "CXO - Chezuba",
-        //             "talk_name": "Talk Name Four",
-        //             "write_up": "Adela Strakova is the driving force behind global NGO and volunteer logistics technology, Chezuba, one of the most innovative Indian start-ups. Her success is based off the philosophy: “Help is always present. It is for us to decide how the needy obtain it.” ",
-        //             "facebook": "#",
-        //             "insta": "#",
-        //             "linkedin": "#",
-        //             "twitter": "#",
-        //             "picture_loc": "./media/speakers/adela.png"
-        //         },
-        //         {
-        //             "name": "Arif Chaudhary",
-        //             "occupation": "B-Boy",
-        //             "talk_name": "Talk Name Five",
-        //             "write_up": "Arif Chaudhary is a 22-year old B-Boy from Mumbai, and a three time national champion of BC One. He is a self-taught dancer and goes by the stage name Flying Machine. What he lacks in age, he more than makes up for in talent and perseverance. ",
-        //             "facebook": "https://www.facebook.com/arif.chaudhary.9",
-        //             "insta": "https://www.instagram.com/flyingmachine_official/",
-        //             "linkedin": "#",
-        //             "twitter": "#",
-        //             "picture_loc": "./media/speakers/arif.png"
-        //         },
-        //         {
-        //             "name": "Lydian Nadhaswaram",
-        //             "occupation": "Multi-Instrumentalist and Composer ",
-        //             "talk_name": "Talk Name Six",
-        //             "write_up": "As one of the most talented child prodigies of the music world, Lydian Nadhaswaram has grown up playing the piano from a starry-eyed boy to winning the TV show \"The World's Best\". ",
-        //             "facebook": "https://www.facebook.com/lydianadhaswaram/",
-        //             "insta": "https://www.instagram.com/lydiannadhaswaramofficial/?hl=en",
-        //             "linkedin": "#",
-        //             "twitter": "#",
-        //             "picture_loc": "./media/speakers/lydian.png"
-        //         },
-        //         {
-        //             "name": "Imtiaz Qureshi",
-        //             "occupation": "Padma Shri, Master Chef at ITC.",
-        //             "talk_name": "Talk Name Eight",
-        //             "write_up": "A Padma Shree winning culinary wizard, Imtiaz Qureshi has been a paragon of Indian cuisine in the country, becoming a widely adored figure in the culinary scene across the country. The master chef at the ITC Hotel franchise, Imtiaz has been at the face of the brand and has constantly played a great role in developing and nurturing the future of India's cuisine..",
-        //             "facebook": "https://www.facebook.com/legendofimtiazqureshi/",
-        //             "insta": "https://www.instagram.com/legendofimtiaz/?hl=en",
-        //             "linkedin": "https://in.linkedin.com/in/imtiaz-qureshi-269b1830",
-        //             "twitter": "#",
-        //             "picture_loc": "./media/speakers/imtiaz.png"
-        //         },
-        //         {
-        //             "name": "Piyush Bhisekar",
-        //             "occupation": "Poet, Singer-Songwriter",
-        //             "talk_name": "Talk Name Eight",
-        //             "write_up": "Piyush Bhisekar is a poet and an award winning singer-songwriter who released his debut EP in 2018 with six melodic, soulful and cathartic musical pieces.",
-        //             "facebook": "https://www.facebook.com/PiyushBhisekar/",
-        //             "insta": "https://www.instagram.com/piyush_bhisekar/?hl=en",
-        //             "linkedin": "#",
-        //             "twitter": "#",
-        //             "picture_loc": "./media/speakers/piyush.png"
-        //         },
-        //         {
-        //             "name": "Major Mohammad Ali Shah",
-        //             "occupation": "Indian Theater Personality, Actor and Former Soldier",
-        //             "talk_name": "Talk Name Eight",
-        //             "write_up": "An award winning theatre actor, a nationally celebrated film actor, a IPL match coordinator, a respected public speaker, an IIM graduate, a brave army veteran and an international TEDx speaker, Major Mohammad Ali Shah - the master of many trades is a true Indian icon, traversing and conquering his many field.",
-        //             "facebook": "#",
-        //             "insta": "#",
-        //             "linkedin": "#",
-        //             "twitter": "#",
-        //             "picture_loc": "./media/speakers/major_shah.png"
-        //         },
-        //         {
-        //             "name": "Ramesh Kumar Soni",
-        //             "occupation": "Co-Founder and Director at VayuJal Technologies Private Limited",
-        //             "talk_name": "Talk Name Eight",
-        //             "write_up": "Ramesh Kumar Soni's creation, a machine that can generate water from thin air, has the power to revolutionize the world. This could very well be the solution to all of our water woes..",
-        //             "facebook": "https://www.facebook.com/rameshsoni2010",
-        //             "insta": "#",
-        //             "linkedin": "https://in.linkedin.com/in/ddkvrs",
-        //             "twitter": "#",
-        //             "picture_loc": "./media/speakers/ramesh.png"
-        //         }
-        //     ]
-        // }
-        // data = data["speaker"];
-        // // speakers_data = JSON.parse(response);
-        // // console.log(data);
-        // for (var i in data) {
-        //     // console.log(data[1]);
-        //     // console.log(data[i].name);
-        //     speakers_data.push(new Speaker(data[i].name, data[i].occupation, data[i].talk_name, data[i].write_up, data[i].facebook, data[i].insta, data[i].linkedin, data[i].twitter, data[i].picture_loc));
-        // }
+        var data = {
+            "speaker": [{
+                    "name": "Anjali Barot",
+                    "occupation": "Actor",
+                    "talk_name": "Talk Name One",
+                    "write_up": "An actor and social media sensation, Anjali Barot has made her presence felt across digital, print, television and OTT platforms. When she is not facing the camera, Anjali enjoys a kadak cup of chai and holidaying in the hills. A foodie by birth and someone with an infectious energy, Anjali always has a story or two to tell.",
+                    "facebook": "",
+                    "insta": "https://www.instagram.com/anjalibarotofficial/",
+                    "linkedin": "",
+                    "twitter": "",
+                    "picture_loc": "./media/speakers/Anjali_Barot.png"
+                }
+                // {
+                //     "name": "Ankit Mehrotra",
+                //     "occupation": "Co-Founder & CEO at Dineout",
+                //     "talk_name": "Talk Name Two",
+                //     "write_up": "Ankit Mehrotra - The leading titan behind the revolutionary food-tech enterprise, Dineout, has imbibed the principle stating that \"Small things make perfection but perfection is no small thing.\" This very vision has allowed him to expand the company from a visionary start-up to one of the most used applications in the Indian market today ",
+                //     "facebook": "#",
+                //     "insta": "https://www.instagram.com/ankit.mehrotra/",
+                //     "linkedin": "https://in.linkedin.com/in/ankitatdineout",
+                //     "twitter": "#",
+                //     "picture_loc": "./media/speakers/ankit.png"
+                // },
+                // {
+                //     "name": "Adela Strakova",
+                //     "occupation": "CXO - Chezuba",
+                //     "talk_name": "Talk Name Four",
+                //     "write_up": "Adela Strakova is the driving force behind global NGO and volunteer logistics technology, Chezuba, one of the most innovative Indian start-ups. Her success is based off the philosophy: “Help is always present. It is for us to decide how the needy obtain it.” ",
+                //     "facebook": "#",
+                //     "insta": "#",
+                //     "linkedin": "#",
+                //     "twitter": "#",
+                //     "picture_loc": "./media/speakers/adela.png"
+                // },
+                // {
+                //     "name": "Arif Chaudhary",
+                //     "occupation": "B-Boy",
+                //     "talk_name": "Talk Name Five",
+                //     "write_up": "Arif Chaudhary is a 22-year old B-Boy from Mumbai, and a three time national champion of BC One. He is a self-taught dancer and goes by the stage name Flying Machine. What he lacks in age, he more than makes up for in talent and perseverance. ",
+                //     "facebook": "https://www.facebook.com/arif.chaudhary.9",
+                //     "insta": "https://www.instagram.com/flyingmachine_official/",
+                //     "linkedin": "#",
+                //     "twitter": "#",
+                //     "picture_loc": "./media/speakers/arif.png"
+                // },
+                // {
+                //     "name": "Lydian Nadhaswaram",
+                //     "occupation": "Multi-Instrumentalist and Composer ",
+                //     "talk_name": "Talk Name Six",
+                //     "write_up": "As one of the most talented child prodigies of the music world, Lydian Nadhaswaram has grown up playing the piano from a starry-eyed boy to winning the TV show \"The World's Best\". ",
+                //     "facebook": "https://www.facebook.com/lydianadhaswaram/",
+                //     "insta": "https://www.instagram.com/lydiannadhaswaramofficial/?hl=en",
+                //     "linkedin": "#",
+                //     "twitter": "#",
+                //     "picture_loc": "./media/speakers/lydian.png"
+                // },
+                // {
+                //     "name": "Imtiaz Qureshi",
+                //     "occupation": "Padma Shri, Master Chef at ITC.",
+                //     "talk_name": "Talk Name Eight",
+                //     "write_up": "A Padma Shree winning culinary wizard, Imtiaz Qureshi has been a paragon of Indian cuisine in the country, becoming a widely adored figure in the culinary scene across the country. The master chef at the ITC Hotel franchise, Imtiaz has been at the face of the brand and has constantly played a great role in developing and nurturing the future of India's cuisine..",
+                //     "facebook": "https://www.facebook.com/legendofimtiazqureshi/",
+                //     "insta": "https://www.instagram.com/legendofimtiaz/?hl=en",
+                //     "linkedin": "https://in.linkedin.com/in/imtiaz-qureshi-269b1830",
+                //     "twitter": "#",
+                //     "picture_loc": "./media/speakers/imtiaz.png"
+                // },
+                // {
+                //     "name": "Piyush Bhisekar",
+                //     "occupation": "Poet, Singer-Songwriter",
+                //     "talk_name": "Talk Name Eight",
+                //     "write_up": "Piyush Bhisekar is a poet and an award winning singer-songwriter who released his debut EP in 2018 with six melodic, soulful and cathartic musical pieces.",
+                //     "facebook": "https://www.facebook.com/PiyushBhisekar/",
+                //     "insta": "https://www.instagram.com/piyush_bhisekar/?hl=en",
+                //     "linkedin": "#",
+                //     "twitter": "#",
+                //     "picture_loc": "./media/speakers/piyush.png"
+                // },
+                // {
+                //     "name": "Major Mohammad Ali Shah",
+                //     "occupation": "Indian Theater Personality, Actor and Former Soldier",
+                //     "talk_name": "Talk Name Eight",
+                //     "write_up": "An award winning theatre actor, a nationally celebrated film actor, a IPL match coordinator, a respected public speaker, an IIM graduate, a brave army veteran and an international TEDx speaker, Major Mohammad Ali Shah - the master of many trades is a true Indian icon, traversing and conquering his many field.",
+                //     "facebook": "#",
+                //     "insta": "#",
+                //     "linkedin": "#",
+                //     "twitter": "#",
+                //     "picture_loc": "./media/speakers/major_shah.png"
+                // },
+                // {
+                //     "name": "Ramesh Kumar Soni",
+                //     "occupation": "Co-Founder and Director at VayuJal Technologies Private Limited",
+                //     "talk_name": "Talk Name Eight",
+                //     "write_up": "Ramesh Kumar Soni's creation, a machine that can generate water from thin air, has the power to revolutionize the world. This could very well be the solution to all of our water woes..",
+                //     "facebook": "https://www.facebook.com/rameshsoni2010",
+                //     "insta": "#",
+                //     "linkedin": "https://in.linkedin.com/in/ddkvrs",
+                //     "twitter": "#",
+                //     "picture_loc": "./media/speakers/ramesh.png"
+                // }
+            ]
+        }
+        data = data["speaker"];
+        // speakers_data = JSON.parse(response);
+        // console.log(data);
+        for (var i in data) {
+            // console.log(data[1]);
+            // console.log(data[i].name);
+            speakers_data.push(new Speaker(data[i].name, data[i].occupation, data[i].talk_name, data[i].write_up, data[i].facebook, data[i].insta, data[i].linkedin, data[i].twitter, data[i].picture_loc));
+        }
     // });
     // loadJSON("./json/executives_data.json", function(response) {
         var data = {
@@ -552,27 +552,27 @@ if (screen.width > 1024) {
         j = j - 1;
 
         if (section_name == "speakers") {
-            // if (j == 0) {
-            //     for (var i = 1; i < speaker_cards_len; i++) {
-            //         card = speaker_cards.children[i];
-            //         card.classList.add('shiftCardRight90');
-            //     }
-            // } else if (j == (speaker_cards_len - 1)) {
-            //     for (var i = 0; i < (speaker_cards_len - 1); i++) {
-            //         card = speaker_cards.children[i];
-            //         card.classList.add('shiftCardLeft90');
-            //     }
-            // } else {
-            //     for (var i = 0; i < j; i++) {
-            //         var card = speaker_cards.children[i];
-            //         card.classList.add('shiftCardLeft50');
-            //     }
+            if (j == 0) {
+                for (var i = 1; i < speaker_cards_len; i++) {
+                    card = speaker_cards.children[i];
+                    card.classList.add('shiftCardRight90');
+                }
+            } else if (j == (speaker_cards_len - 1)) {
+                for (var i = 0; i < (speaker_cards_len - 1); i++) {
+                    card = speaker_cards.children[i];
+                    card.classList.add('shiftCardLeft90');
+                }
+            } else {
+                for (var i = 0; i < j; i++) {
+                    var card = speaker_cards.children[i];
+                    card.classList.add('shiftCardLeft50');
+                }
 
-            //     for (var i = (j + 1); i < speaker_cards.childElementCount; i++) {
-            //         var card = speaker_cards.children[i];
-            //         card.classList.add('shiftCardRight50');
-            //     }
-            // }
+                for (var i = (j + 1); i < speaker_cards.childElementCount; i++) {
+                    var card = speaker_cards.children[i];
+                    card.classList.add('shiftCardRight50');
+                }
+            }
         } else if (section_name == "executives") {
             if (j == 0) {
                 for (var i = 1; i < exec_cards_len; i++) {
@@ -668,27 +668,27 @@ if (screen.width > 1024) {
         j = j - 1;
 
         if (section_name == "speakers") {
-            // if (j == 0) {
-            //     for (var i = 1; i < speaker_cards_len; i++) {
-            //         card = speaker_cards.children[i];
-            //         card.classList.remove('shiftCardRight90');
-            //     }
-            // } else if (j == (speaker_cards_len - 1)) {
-            //     for (var i = 0; i < (speaker_cards_len - 1); i++) {
-            //         card = speaker_cards.children[i];
-            //         card.classList.remove('shiftCardLeft90');
-            //     }
-            // } else {
-            //     for (var i = 0; i < j; i++) {
-            //         var card = speaker_cards.children[i];
-            //         card.classList.remove('shiftCardLeft50');
-            //     }
+            if (j == 0) {
+                for (var i = 1; i < speaker_cards_len; i++) {
+                    card = speaker_cards.children[i];
+                    card.classList.remove('shiftCardRight90');
+                }
+            } else if (j == (speaker_cards_len - 1)) {
+                for (var i = 0; i < (speaker_cards_len - 1); i++) {
+                    card = speaker_cards.children[i];
+                    card.classList.remove('shiftCardLeft90');
+                }
+            } else {
+                for (var i = 0; i < j; i++) {
+                    var card = speaker_cards.children[i];
+                    card.classList.remove('shiftCardLeft50');
+                }
 
-            //     for (var i = (j + 1); i < speaker_cards.childElementCount; i++) {
-            //         var card = speaker_cards.children[i];
-            //         card.classList.remove('shiftCardRight50');
-            //     }
-            // }
+                for (var i = (j + 1); i < speaker_cards.childElementCount; i++) {
+                    var card = speaker_cards.children[i];
+                    card.classList.remove('shiftCardRight50');
+                }
+            }
         } else if (section_name == "executives") {
             if (j == 0) {
                 for (var i = 1; i < exec_cards_len; i++) {
@@ -787,40 +787,40 @@ if (screen.width > 1024) {
         j = j - 1;
 
         if (type == "speakers") {
-            // var speaker = speakers_data[j];
-            // var text = speaker_info.children[0].children;
-            // var image = speaker_info.children[1].children;
-            // var social = speaker_info.children[0].children[4];
+            var speaker = speakers_data[j];
+            var text = speaker_info.children[0].children;
+            var image = speaker_info.children[1].children;
+            var social = speaker_info.children[0].children[4];
 
-            // text[0].innerHTML = speaker["name"];
-            // // console.log(speaker["name"]);
-            // text[1].innerHTML = speaker["occupation"];
-            // // console.log(speaker["occupation"]);
-            // text[2].innerText = speaker["talk"];
-            // // console.log(speaker["talk"]);
-            // text[3].innerText = speaker["write_up"];
-            // // console.log(speaker["write_up"]);
+            text[0].innerHTML = speaker["name"];
+            // console.log(speaker["name"]);
+            text[1].innerHTML = speaker["occupation"];
+            // console.log(speaker["occupation"]);
+            text[2].innerText = speaker["talk"];
+            // console.log(speaker["talk"]);
+            text[3].innerText = speaker["write_up"];
+            // console.log(speaker["write_up"]);
 
-            // social.children[0].children[0].href = speaker["lin"];
-            // if (speaker["lin"] == "#") {
-            //     social.children[0].style.display = "none";
-            // }
-            // // console.log(executive["lin"]);
-            // social.children[1].children[0].href = speaker["insta"];
-            // if (speaker["insta"] == "#") {
-            //     social.children[1].style.display = "none";
-            // }
-            // // console.log(executive["insta"]);
-            // social.children[2].children[0].href = speaker["fb"];
-            // if (speaker["fb"] == "#") {
-            //     social.children[2].style.display = "none";
-            // }
-            // // console.log(executive["fb"]);
+            social.children[0].children[0].href = speaker["lin"];
+            if (speaker["lin"] == "#") {
+                social.children[0].style.display = "none";
+            }
+            // console.log(executive["lin"]);
+            social.children[1].children[0].href = speaker["insta"];
+            if (speaker["insta"] == "#") {
+                social.children[1].style.display = "none";
+            }
+            // console.log(executive["insta"]);
+            social.children[2].children[0].href = speaker["fb"];
+            if (speaker["fb"] == "#") {
+                social.children[2].style.display = "none";
+            }
+            // console.log(executive["fb"]);
 
-            // image[0].srcset = speaker["picture"];
+            image[0].srcset = speaker["picture"];
 
-            // speaker_info.classList.remove('pull-animation');
-            // speaker_info.classList.add('drop-animation');
+            speaker_info.classList.remove('pull-animation');
+            speaker_info.classList.add('drop-animation');
         } else if (type == "executives") {
             var executive = executives_data[j];
             executive_info.children[0].children[0]
@@ -871,15 +871,15 @@ if (screen.width > 1024) {
         }
     }
 
-    // $("#close-btn-speakers").click(e => {
-    //     var social = speaker_info.children[0].children[4];
-    //     social.children[0].style.display = "block";
-    //     social.children[1].style.display = "block";
-    //     social.children[2].style.display = "block";
-    //     speaker_info.classList.add('pull-animation');
-    //     speaker_info.classList.remove('drop-animation');
-    //     // speaker_info.style.display = "none";
-    // });
+    $("#close-btn-speakers").click(e => {
+        var social = speaker_info.children[0].children[4];
+        social.children[0].style.display = "block";
+        social.children[1].style.display = "block";
+        social.children[2].style.display = "block";
+        speaker_info.classList.add('pull-animation');
+        speaker_info.classList.remove('drop-animation');
+        // speaker_info.style.display = "none";
+    });
     $("#close-btn-executives").click(e => {
         // if(j == 9 || j == 10){
         //     executive_info.children[1].children[1].style.background = "none";
@@ -903,7 +903,7 @@ if (screen.width > 1024) {
     const cardWidth = 375;
 
     // Speakers Variables
-    const noOfSpeakers = 9;
+    const noOfSpeakers = 1;
     let counter_sp = 0;
     let pushedBy_sp = 0;
 
@@ -938,13 +938,13 @@ if (screen.width > 1024) {
         var counter = 0;
         var pushedBy = 0;
         switch (section) {
-            // case ("speakers"):
-            //     {
-            //         noOfActualCards = noOfSpeakers;
-            //         counter = counter_sp;
-            //         pushedBy = pushedBy_sp;
-            //         break;
-            //     }
+            case ("speakers"):
+                {
+                    noOfActualCards = noOfSpeakers;
+                    counter = counter_sp;
+                    pushedBy = pushedBy_sp;
+                    break;
+                }
             case ("executives"):
                 {
                     noOfActualCards = noOfExecutives;
@@ -983,12 +983,12 @@ if (screen.width > 1024) {
             cards.css("transform", 'translateX(-' + pushedBy + 'px)');
             counter--;
             switch (section) {
-                // case ("speakers"):
-                //     {
-                //         pushedBy_sp = pushedBy;
-                //         counter_sp = counter;
-                //         break;
-                //     }
+                case ("speakers"):
+                    {
+                        pushedBy_sp = pushedBy;
+                        counter_sp = counter;
+                        break;
+                    }
                 case ("executives"):
                     {
                         pushedBy_ex = pushedBy;
@@ -1025,12 +1025,12 @@ if (screen.width > 1024) {
             cards.css("transform", 'translateX(-' + pushedBy + 'px)');
             counter--;
             switch (section) {
-                // case ("speakers"):
-                //     {
-                //         pushedBy_sp = pushedBy;
-                //         counter_sp = counter;
-                //         break;
-                //     }
+                case ("speakers"):
+                    {
+                        pushedBy_sp = pushedBy;
+                        counter_sp = counter;
+                        break;
+                    }
                 case ("executives"):
                     {
                         pushedBy_ex = pushedBy;
@@ -1100,13 +1100,13 @@ if (screen.width > 1024) {
         var counter = 0;
         var pushedBy = 0;
         switch (section) {
-            // case ("speakers"):
-            //     {
-            //         noOfActualCards = noOfSpeakers;
-            //         counter = counter_sp;
-            //         pushedBy = pushedBy_sp;
-            //         break;
-            //     }
+            case ("speakers"):
+                {
+                    noOfActualCards = noOfSpeakers;
+                    counter = counter_sp;
+                    pushedBy = pushedBy_sp;
+                    break;
+                }
             case ("executives"):
                 {
                     noOfActualCards = noOfExecutives;
@@ -1144,12 +1144,12 @@ if (screen.width > 1024) {
             cards.css("transform", 'translateX(-' + pushedBy + 'px)');
             counter++;
             switch (section) {
-                // case ("speakers"):
-                //     {
-                //         pushedBy_sp = pushedBy;
-                //         counter_sp = counter;
-                //         break;
-                //     }
+                case ("speakers"):
+                    {
+                        pushedBy_sp = pushedBy;
+                        counter_sp = counter;
+                        break;
+                    }
                 case ("executives"):
                     {
                         pushedBy_ex = pushedBy;
@@ -1182,12 +1182,12 @@ if (screen.width > 1024) {
             cards.css("transform", 'translateX(-' + pushedBy + 'px)');
             counter++;
             switch (section) {
-                // case ("speakers"):
-                //     {
-                //         pushedBy_sp = pushedBy;
-                //         counter_sp = counter;
-                //         break;
-                //     }
+                case ("speakers"):
+                    {
+                        pushedBy_sp = pushedBy;
+                        counter_sp = counter;
+                        break;
+                    }
                 case ("executives"):
                     {
                         pushedBy_ex = pushedBy;
@@ -1493,41 +1493,41 @@ else if (screen.width >= 768 && screen.width <= 1024) {
         j = j - 1;
 
         if (type == "speakers") {
-            // var speaker = speakers_data[j];
-            // var text = speaker_info.children[0].children;
-            // var image = speaker_info.children[1].children;
-            // var social = speaker_info.children[0].children[4];
+            var speaker = speakers_data[j];
+            var text = speaker_info.children[0].children;
+            var image = speaker_info.children[1].children;
+            var social = speaker_info.children[0].children[4];
 
-            // text[0].innerHTML = speaker["name"];
-            // // console.log(speaker["name"]);
-            // text[1].innerHTML = speaker["occupation"];
-            // // console.log(speaker["occupation"]);
-            // text[2].innerText = speaker["talk"];
-            // // console.log(speaker["talk"]);
-            // text[3].innerText = speaker["write_up"];
-            // // console.log(speaker["write_up"]);
+            text[0].innerHTML = speaker["name"];
+            // console.log(speaker["name"]);
+            text[1].innerHTML = speaker["occupation"];
+            // console.log(speaker["occupation"]);
+            text[2].innerText = speaker["talk"];
+            // console.log(speaker["talk"]);
+            text[3].innerText = speaker["write_up"];
+            // console.log(speaker["write_up"]);
 
-            // social.children[0].children[0].href = speaker["lin"];
-            // if (speaker["lin"] == "#") {
-            //     social.children[0].style.display = "none";
-            // }
-            // // console.log(executive["lin"]);
-            // social.children[1].children[0].href = speaker["insta"];
-            // if (speaker["insta"] == "#") {
-            //     social.children[1].style.display = "none";
-            // }
-            // // console.log(executive["insta"]);
-            // social.children[2].children[0].href = speaker["fb"];
-            // if (speaker["fb"] == "#") {
-            //     social.children[2].style.display = "none";
-            // }
-            // // console.log(executive["fb"]);
+            social.children[0].children[0].href = speaker["lin"];
+            if (speaker["lin"] == "#") {
+                social.children[0].style.display = "none";
+            }
+            // console.log(executive["lin"]);
+            social.children[1].children[0].href = speaker["insta"];
+            if (speaker["insta"] == "#") {
+                social.children[1].style.display = "none";
+            }
+            // console.log(executive["insta"]);
+            social.children[2].children[0].href = speaker["fb"];
+            if (speaker["fb"] == "#") {
+                social.children[2].style.display = "none";
+            }
+            // console.log(executive["fb"]);
 
-            // image[0].srcset = speaker["picture"];
+            image[0].srcset = speaker["picture"];
 
-            // // speaker_info.classList.remove('pull-animation');
-            // // speaker_info.classList.add('drop-animation');
-            // speaker_info.style.display = "flex";
+            // speaker_info.classList.remove('pull-animation');
+            // speaker_info.classList.add('drop-animation');
+            speaker_info.style.display = "flex";
         } else if (type == "executives") {
             var executive = executives_data[j];
             executive_info.children[0].children[0]
@@ -1578,15 +1578,15 @@ else if (screen.width >= 768 && screen.width <= 1024) {
         }
     }
 
-    // $("#close-btn-speakers").click(e => {
-    //     var social = speaker_info.children[0].children[4];
-    //     social.children[0].style.display = "block";
-    //     social.children[1].style.display = "block";
-    //     social.children[2].style.display = "block";
-    //     // speaker_info.classList.add('pull-animation');
-    //     // speaker_info.classList.remove('drop-animation');
-    //     speaker_info.style.display = "none";
-    // });
+    $("#close-btn-speakers").click(e => {
+        var social = speaker_info.children[0].children[4];
+        social.children[0].style.display = "block";
+        social.children[1].style.display = "block";
+        social.children[2].style.display = "block";
+        // speaker_info.classList.add('pull-animation');
+        // speaker_info.classList.remove('drop-animation');
+        speaker_info.style.display = "none";
+    });
     $("#close-btn-executives").click(e => {
         // if(j == 9 || j == 10){
         //     executive_info.children[1].children[1].style.background = "none";
@@ -1852,41 +1852,41 @@ else if (screen.width < 768) {
         j = j - 1;
 
         if (type == "speakers") {
-            // var speaker = speakers_data[j];
-            // var text = speaker_info.children[0].children;
-            // var image = speaker_info.children[1].children;
-            // var social = speaker_info.children[0].children[4];
+            var speaker = speakers_data[j];
+            var text = speaker_info.children[0].children;
+            var image = speaker_info.children[1].children;
+            var social = speaker_info.children[0].children[4];
 
-            // text[0].innerHTML = speaker["name"];
-            // // console.log(speaker["name"]);
-            // text[1].innerHTML = speaker["occupation"];
-            // // console.log(speaker["occupation"]);
-            // text[2].innerText = speaker["talk"];
-            // // console.log(speaker["talk"]);
-            // text[3].innerText = speaker["write_up"];
-            // // console.log(speaker["write_up"]);
+            text[0].innerHTML = speaker["name"];
+            // console.log(speaker["name"]);
+            text[1].innerHTML = speaker["occupation"];
+            // console.log(speaker["occupation"]);
+            text[2].innerText = speaker["talk"];
+            // console.log(speaker["talk"]);
+            text[3].innerText = speaker["write_up"];
+            // console.log(speaker["write_up"]);
 
-            // social.children[0].children[0].href = speaker["lin"];
-            // if (speaker["lin"] == "#") {
-            //     social.children[0].style.display = "none";
-            // }
-            // // console.log(executive["lin"]);
-            // social.children[1].children[0].href = speaker["insta"];
-            // if (speaker["insta"] == "#") {
-            //     social.children[1].style.display = "none";
-            // }
-            // // console.log(executive["insta"]);
-            // social.children[2].children[0].href = speaker["fb"];
-            // if (speaker["fb"] == "#") {
-            //     social.children[2].style.display = "none";
-            // }
-            // // console.log(executive["fb"]);
+            social.children[0].children[0].href = speaker["lin"];
+            if (speaker["lin"] == "#") {
+                social.children[0].style.display = "none";
+            }
+            // console.log(executive["lin"]);
+            social.children[1].children[0].href = speaker["insta"];
+            if (speaker["insta"] == "#") {
+                social.children[1].style.display = "none";
+            }
+            // console.log(executive["insta"]);
+            social.children[2].children[0].href = speaker["fb"];
+            if (speaker["fb"] == "#") {
+                social.children[2].style.display = "none";
+            }
+            // console.log(executive["fb"]);
 
-            // image[0].srcset = speaker["picture"];
+            image[0].srcset = speaker["picture"];
 
-            // // speaker_info.classList.remove('pull-animation');
-            // // speaker_info.classList.add('drop-animation');
-            // speaker_info.style.display = "flex";
+            // speaker_info.classList.remove('pull-animation');
+            // speaker_info.classList.add('drop-animation');
+            speaker_info.style.display = "flex";
         } else if (type == "executives") {
             var executive = executives_data[j];
             executive_info.children[0].children[0]
@@ -1937,15 +1937,15 @@ else if (screen.width < 768) {
         }
     }
 
-    // $("#close-btn-speakers").click(e => {
-    //     var social = speaker_info.children[0].children[4];
-    //     social.children[0].style.display = "block";
-    //     social.children[1].style.display = "block";
-    //     social.children[2].style.display = "block";
-    //     // speaker_info.classList.add('pull-animation');
-    //     // speaker_info.classList.remove('drop-animation');
-    //     speaker_info.style.display = "none";
-    // });
+    $("#close-btn-speakers").click(e => {
+        var social = speaker_info.children[0].children[4];
+        social.children[0].style.display = "block";
+        social.children[1].style.display = "block";
+        social.children[2].style.display = "block";
+        // speaker_info.classList.add('pull-animation');
+        // speaker_info.classList.remove('drop-animation');
+        speaker_info.style.display = "none";
+    });
     $("#close-btn-executives").click(e => {
         // if(j == 9 || j == 10){
         //     executive_info.children[1].children[1].style.background = "none";

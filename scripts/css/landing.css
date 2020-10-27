@@ -127,7 +127,7 @@
 .landing-logo {
     width: 25%;
     height: 10%;
-    background-image: url("../../media/tedxlogo.png");
+    background-image: url("../../media/BREAKTHROUGH.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -397,7 +397,7 @@
     .landing-logo {
         width: 25%;
         height: 10%;
-        background-image: url("../../media/tedxlogo.png");
+        background-image: url("../../media/BREAKTHROUGH.png");
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
@@ -408,7 +408,7 @@
     .landing-event-logo {
         width: 80%;
         height: 25%;
-        background-image: url("../../media/tedxlogo2020.png");
+        background-image: url("../../media/BREAKTHROUGH.png");
         background-repeat: no-repeat;
         background-size: contain;
         /* border: 2px solid white; */
