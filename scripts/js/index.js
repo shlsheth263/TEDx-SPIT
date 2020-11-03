@@ -182,51 +182,51 @@ window.onload = function() {
                     "linkedin": "",
                     "twitter": "",
                     "picture_loc": "./media/speakers/Anjali_Barot.png"
+                },
+                {
+                    "name": "Tushar Mahajan",
+                    "occupation": "Photographer & DOP",
+                    "talk_name": "Talk Name Two",
+                    "write_up": "Although being a photographer was never his plan, Tushar Mahajan has succeeded in making a name for himself through his work in this industry over the past five years. At present, he makes music videos for Euphoria and manages social media content and behind the scenes for one of the biggest YouTube channels in India - BB Ki Vines. When he is not working, he likes playing cricket and listening to music, ranging from rock and roll to Indian classical music.",
+                    "facebook": "",
+                    "insta": "https://www.instagram.com/tusharmahajanofficial/",
+                    "linkedin": "",
+                    "twitter": "",
+                    "picture_loc": "./media/speakers/Tushar_Mahajan.png"
+                },
+                {
+                    "name": "Shams Alam",
+                    "occupation": "Indian Para Swimmer",
+                    "talk_name": "Talk Name Three",
+                    "write_up": "Shams Alam is an Indian Para Swimmer, who holds the world record for the Longest Open Sea Swimming by paraplegic person. An engineer and an MBA by profession, he overcame all odds to be an international gold medalist para swimmer and was awarded the best emerging leader in disability sports & sports diplomacy by the U.S. Department of State Global Sports Mentoring Program in 2018. He has continued to inspire the youth by delivering multiple TEDx talks & motivational speeches over the years.",
+                    "facebook": "",
+                    "insta": "https://www.instagram.com/iamshamsaalam/",
+                    "linkedin": "",
+                    "twitter": "",
+                    "picture_loc": "./media/speakers/Shams_Alam.png"
+                },
+                {
+                    "name": "Rudhraksh Jaiswal",
+                    "occupation": "Actor",
+                    "talk_name": "Talk Name Four",
+                    "write_up": "Rudhraksh Jaiswal kickstarted his career in 2013 when he bagged the role of Sahadev in Mahabharata. Despite being a child actor, he has maintained a clean balance between his studies and his acting commitments. Widening his multi-faceted journey, Rudhraksh stepped into the world of films with Noor (2017). The latest addition to his long list of achievements is Extraction, where he had the chance of working alongside Chris Hemsworth and David Harbour. He is a jovial person, who's always ready to persevere and learn in order to shape ideas into reality.",
+                    "facebook": "",
+                    "insta": "https://www.instagram.com/rudhrakshjaiswal1/",
+                    "linkedin": "",
+                    "twitter": "",
+                    "picture_loc": "./media/speakers/Rudraksh_Jaiswal.png"
+                },
+                {
+                    "name": "Dr. Dilip Pawar",
+                    "occupation": "Covid-19 Task Force Doctor",
+                    "talk_name": "Talk Name Five",
+                    "write_up": "Dr. Dilip Pawar is a Physician, International Cancer Research Specialist, and a COVID-19 expert. He holds the Guinness World Record for screening the largest number of cases of Breast Cancer by self-examination. Apart from having more than 175 Scientific Publications to his name, Dr. Pawar is a recipient of several awards for COVID-19 related research and a pioneer in the Steam Inhalation Therapy for COVID-19. He has also been selected as an Indian Army Doctor for COVID-19.",
+                    "facebook": "",
+                    "insta": "",
+                    "linkedin": "",
+                    "twitter": "",
+                    "picture_loc": "./media/speakers/Dilip_Pawar.png"
                 }
-                // {
-                //     "name": "Ankit Mehrotra",
-                //     "occupation": "Co-Founder & CEO at Dineout",
-                //     "talk_name": "Talk Name Two",
-                //     "write_up": "Ankit Mehrotra - The leading titan behind the revolutionary food-tech enterprise, Dineout, has imbibed the principle stating that \"Small things make perfection but perfection is no small thing.\" This very vision has allowed him to expand the company from a visionary start-up to one of the most used applications in the Indian market today ",
-                //     "facebook": "#",
-                //     "insta": "https://www.instagram.com/ankit.mehrotra/",
-                //     "linkedin": "https://in.linkedin.com/in/ankitatdineout",
-                //     "twitter": "#",
-                //     "picture_loc": "./media/speakers/ankit.png"
-                // },
-                // {
-                //     "name": "Adela Strakova",
-                //     "occupation": "CXO - Chezuba",
-                //     "talk_name": "Talk Name Four",
-                //     "write_up": "Adela Strakova is the driving force behind global NGO and volunteer logistics technology, Chezuba, one of the most innovative Indian start-ups. Her success is based off the philosophy: “Help is always present. It is for us to decide how the needy obtain it.” ",
-                //     "facebook": "#",
-                //     "insta": "#",
-                //     "linkedin": "#",
-                //     "twitter": "#",
-                //     "picture_loc": "./media/speakers/adela.png"
-                // },
-                // {
-                //     "name": "Arif Chaudhary",
-                //     "occupation": "B-Boy",
-                //     "talk_name": "Talk Name Five",
-                //     "write_up": "Arif Chaudhary is a 22-year old B-Boy from Mumbai, and a three time national champion of BC One. He is a self-taught dancer and goes by the stage name Flying Machine. What he lacks in age, he more than makes up for in talent and perseverance. ",
-                //     "facebook": "https://www.facebook.com/arif.chaudhary.9",
-                //     "insta": "https://www.instagram.com/flyingmachine_official/",
-                //     "linkedin": "#",
-                //     "twitter": "#",
-                //     "picture_loc": "./media/speakers/arif.png"
-                // },
-                // {
-                //     "name": "Lydian Nadhaswaram",
-                //     "occupation": "Multi-Instrumentalist and Composer ",
-                //     "talk_name": "Talk Name Six",
-                //     "write_up": "As one of the most talented child prodigies of the music world, Lydian Nadhaswaram has grown up playing the piano from a starry-eyed boy to winning the TV show \"The World's Best\". ",
-                //     "facebook": "https://www.facebook.com/lydianadhaswaram/",
-                //     "insta": "https://www.instagram.com/lydiannadhaswaramofficial/?hl=en",
-                //     "linkedin": "#",
-                //     "twitter": "#",
-                //     "picture_loc": "./media/speakers/lydian.png"
-                // },
                 // {
                 //     "name": "Imtiaz Qureshi",
                 //     "occupation": "Padma Shri, Master Chef at ITC.",
@@ -903,7 +903,7 @@ if (screen.width > 1024) {
     const cardWidth = 375;
 
     // Speakers Variables
-    const noOfSpeakers = 1;
+    const noOfSpeakers = 5;
     let counter_sp = 0;
     let pushedBy_sp = 0;
 
