@@ -195,15 +195,15 @@ window.onload = function() {
                     "picture_loc": "./media/speakers/Tushar_Mahajan.png"
                 },
                 {
-                    "name": "Shams Alam",
-                    "occupation": "Indian Para Swimmer",
-                    "talk_name": "Talk Name Three",
-                    "write_up": "Shams Alam is an Indian Para Swimmer, who holds the world record for the Longest Open Sea Swimming by paraplegic person. An engineer and an MBA by profession, he overcame all odds to be an international gold medalist para swimmer and was awarded the best emerging leader in disability sports & sports diplomacy by the U.S. Department of State Global Sports Mentoring Program in 2018. He has continued to inspire the youth by delivering multiple TEDx talks & motivational speeches over the years.",
+                    "name": "Pratik Gandhi",
+                    "occupation": "Actor",
+                    "talk_name": "Talk Name Two",
+                    "write_up": "After the apt portrayal of Harshad Mehta in Sony Liv's Scam 1992, Pratik Gandhi has become a household name. His role has the entire country singing his praises. However, this shot to fame didn't happen overnight. After years of working as a mechanical engineer and taking up acting gigs on the side, Pratik eventually quit his job to pursue acting full time. How he went from a mechanical engineer to the man of the hour, is a journey you don't want to miss.",
                     "facebook": "",
-                    "insta": "https://www.instagram.com/iamshamsaalam/",
+                    "insta": "https://www.instagram.com/pratikgandhiofficial/",
                     "linkedin": "",
                     "twitter": "",
-                    "picture_loc": "./media/speakers/Shams_Alam.png"
+                    "picture_loc": "./media/speakers/Pratik_Gandhi.png"
                 },
                 {
                     "name": "Rudhraksh Jaiswal",
@@ -215,6 +215,17 @@ window.onload = function() {
                     "linkedin": "",
                     "twitter": "",
                     "picture_loc": "./media/speakers/Rudraksh_Jaiswal.png"
+                },
+                {
+                    "name": "Shams Alam",
+                    "occupation": "Indian Para Swimmer",
+                    "talk_name": "Talk Name Three",
+                    "write_up": "Shams Alam is an Indian Para Swimmer, who holds the world record for the Longest Open Sea Swimming by paraplegic person. An engineer and an MBA by profession, he overcame all odds to be an international gold medalist para swimmer and was awarded the best emerging leader in disability sports & sports diplomacy by the U.S. Department of State Global Sports Mentoring Program in 2018. He has continued to inspire the youth by delivering multiple TEDx talks & motivational speeches over the years.",
+                    "facebook": "",
+                    "insta": "https://www.instagram.com/iamshamsaalam/",
+                    "linkedin": "",
+                    "twitter": "",
+                    "picture_loc": "./media/speakers/Shams_Alam.png"
                 },
                 {
                     "name": "Dr. Dilip Pawar",
@@ -903,7 +914,7 @@ if (screen.width > 1024) {
     const cardWidth = 375;
 
     // Speakers Variables
-    const noOfSpeakers = 5;
+    const noOfSpeakers = 6;
     let counter_sp = 0;
     let pushedBy_sp = 0;
 
